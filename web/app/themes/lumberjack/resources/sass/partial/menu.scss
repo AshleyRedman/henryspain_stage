@@ -1,0 +1,30 @@
+.menu {
+    display: none;
+    @media only screen and (min-width: $desktop) {
+        display: block;
+    }
+}
+
+.menu__wrap {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    margin: 0 1.25rem;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__item__link {
+    @include font-size(16px);
+    color: $hs-navy;
+    font-weight: bold;
+}

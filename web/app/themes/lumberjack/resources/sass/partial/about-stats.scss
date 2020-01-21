@@ -1,0 +1,48 @@
+.about-stats {
+    padding: 3rem 0;
+
+    @media only screen and (min-width: $desktop) {
+        padding: 6rem 0;
+    }
+
+    .container {
+
+    }
+}
+
+.about-stats__wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+
+    @media only screen and (min-width: $desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 0 1.5rem 0;
+
+    @media only screen and (min-width: $desktop) {
+        padding: 0 0 0 0;
+    }
+
+    .h3 {
+        @include font-size(42px);
+        font-weight: bold;
+    }
+    .h5 {
+        padding: 1.75rem 0;
+        font-weight: normal;
+    }
+    .icon {
+        svg {
+            width: 50px;
+            fill: $hs-navy;
+        }
+    }
+}

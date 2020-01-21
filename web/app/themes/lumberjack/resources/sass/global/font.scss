@@ -1,0 +1,7 @@
+@import url('https://rsms.me/inter/inter.css');
+
+$inter: 'Inter',Arial,Helvetica Neue,Helvetica;
+
+:root {
+  --inter: #{$inter};
+}

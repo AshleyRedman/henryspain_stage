@@ -1,0 +1,21 @@
+.services-info {
+
+    .container {
+
+    }
+
+    .h5 {
+        @include font-size(18px);
+        font-weight: bold;
+        padding: 1.5rem 0;
+    }
+}
+
+.services-info__list {
+    list-style-type: circle;
+    padding-left: 20px;
+
+    li {
+        padding: 0.5rem 0;
+    }
+}

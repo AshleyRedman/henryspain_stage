@@ -1,0 +1,80 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">{{ page.title }}</h1>
+                <h6 class="h6">Get to know us</h6>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+    <section class="about-grid">
+        <div class="container">
+            <div class="about-grid__item">
+                <h3 class="h3">Our Vision</h3>
+                <p class="text">To make a positive difference by offering a service of choice</p>
+                <p class="text">Working with clients and their families to help them reach their financial goals</p>
+                <p class="text">Creating a legacy of excellence</p>
+            </div>
+            <div class="about-grid__item">
+                <h3 class="h3">Our Values</h3>
+                <p class="text">Placing investors needs first and always doing the right thing</p>
+                <p class="text">Honesty & integrity</p>
+                <p class="text">Continuity & stability</p>
+                <p class="text">We make quality long term investments and only invest in things we understand </p>
+            </div>
+            <div class="about-grid__item">
+                <h3 class="h3">Our Service</h3>
+                <p class="text">Discretionary Investment Management</p>
+                <p class="text">Pensions and Retirement Planning</p>
+                <p class="text">Inheritance Tax Planning</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-content">
+        <div class="container">
+            <h2 class="h2">About us</h2>
+            <p class="text">At Henry Spain Investment Services, we are focused on delivering a proactive
+                and personalised wealth management service to help our clients achieve what is important to them.</p>
+            <p class="text">Our offices are conveniently located in the heart of two market towns, where we provide
+                local advice based on global research.</p>
+            <p class="text">In a complex and changing world our clients find our personal and straightforward approach to investing refreshing. We plan to work with you over the long term and build a relationship of trust, where you can have confidence in the advice you receive.</p>
+            <p class="text">If you like being treated as an individual, and want to receive a personalised service, then give us a call or visit one of our local offices to find out if we can help you.</p>
+        </div>
+    </section>
+
+    {% include 'partial/team.twig' %}
+
+    <section class="about-stats">
+        <div class="container">
+            <div class="about-stats__wrap">
+                <div class="stat">
+                    <h3 class="h3">9</h3>
+                    <h5 class="h5">Years Helping Local People</h5>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"/><path d="M76 230h40v40H76zM156 230h40v40h-40zM236 230h40v40h-40zM316 230h40v40h-40zM396 230h40v40h-40zM76 310h40v40H76zM156 310h40v40h-40zM236 310h40v40h-40zM316 310h40v40h-40zM76 390h40v40H76zM156 390h40v40h-40zM236 390h40v40h-40zM316 390h40v40h-40zM396 310h40v40h-40z"/></svg>
+                    </span>
+                </div>
+                <div class="stat">
+                    <h3 class="h3">300+</h3>
+                    <h5 class="h5">Happy Clients</h5>
+                    <span class="icon">
+                        <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 455.516c-7.29 0-14.316-2.641-19.793-7.438-20.684-18.086-40.625-35.082-58.219-50.074l-.09-.078c-51.582-43.957-96.125-81.918-127.117-119.313C16.137 236.81 0 197.172 0 153.871c0-42.07 14.426-80.883 40.617-109.293C67.121 15.832 103.488 0 143.031 0c29.555 0 56.621 9.344 80.446 27.77C235.5 37.07 246.398 48.453 256 61.73c9.605-13.277 20.5-24.66 32.527-33.96C312.352 9.344 339.418 0 368.973 0c39.539 0 75.91 15.832 102.414 44.578C497.578 72.988 512 111.801 512 153.871c0 43.3-16.133 82.938-50.777 124.738-30.993 37.399-75.532 75.356-127.106 119.309-17.625 15.016-37.597 32.039-58.328 50.168a30.046 30.046 0 0 1-19.789 7.43zM143.031 29.992c-31.066 0-59.605 12.399-80.367 34.914-21.07 22.856-32.676 54.45-32.676 88.965 0 36.418 13.535 68.988 43.883 105.606 29.332 35.394 72.961 72.574 123.477 115.625l.093.078c17.66 15.05 37.68 32.113 58.516 50.332 20.961-18.254 41.012-35.344 58.707-50.418 50.512-43.051 94.137-80.223 123.469-115.617 30.344-36.618 43.879-69.188 43.879-105.606 0-34.516-11.606-66.11-32.676-88.965-20.758-22.515-49.3-34.914-80.363-34.914-22.758 0-43.653 7.235-62.102 21.5-16.441 12.719-27.894 28.797-34.61 40.047-3.452 5.785-9.53 9.238-16.261 9.238s-12.809-3.453-16.262-9.238c-6.71-11.25-18.164-27.328-34.61-40.047-18.448-14.265-39.343-21.5-62.097-21.5zm0 0"/></svg>
+                    </span>
+                </div>
+                <div class="stat">
+                    <h3 class="h3">110m+</h3>
+                    <h5 class="h5">Invested</h5>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494.3 494.3"><path d="M416.163 313.3V136.2c0-5.5-4.5-9.3-10-9.3h-38.7c-5.5 0-10.3 3.8-10.3 9.3V296c-6.4.2-12.8 1-19 2.5V188.4c0-5.5-4.7-9.5-10.2-9.5h-38.7c-5.5 0-10.1 3.9-10.1 9.5v149.3a98.158 98.158 0 0 0-18.2 57.4c0 54.8 44.4 99.2 99.1 99.2 54.8 0 99.2-44.4 99.2-99.1 0-32.8-16.1-63.4-43.1-81.9zm-39-166.4h19v155.8c-6.1-2.4-12.5-4.2-19-5.2V146.9zm-78 52h19v106.5c-6.7 3.1-13.1 6.9-19 11.4V198.9zm129.1 236.5c-14.3 24.1-40.2 38.8-68.1 38.8-43.7 0-79.1-35.5-79.1-79.1 0-32 19.3-60.9 48.9-73.1 1.2-.2 2.3-.7 3.3-1.3 8.6-3.2 17.8-4.8 27-4.8 2.1 0 4.1.1 6.2.3h.1c12 .9 23.7 4.6 34 10.8 37.599 22.3 50 70.8 27.7 108.4z"/><path d="M360.263 387c-7 0-12.6-5.6-12.6-12.6s5.5-12.6 12.5-12.7c7 0 12.6 5.7 12.6 12.6 0 5.5 4.5 10 10 10 5.6 0 10.1-4.4 10.2-10 0-13.4-8.2-25.5-20.7-30.4v-8.3c0-5.5-4.5-10-10-10s-10 4.5-10 10v7.2c-17.4 4.5-27.9 22.3-23.4 39.7 3.6 14.4 16.5 24.4 31.3 24.4 6.9 0 12.5 5.7 12.5 12.6 0 6.9-5.7 12.5-12.6 12.5-6.9 0-12.5-5.7-12.5-12.6 0-5.5-4.5-10-10-10s-9.9 4.4-9.8 9.9v.1c.1 14.8 10.1 27.8 24.4 31.5v4.5c0 5.5 4.5 10 10 10s10-4.5 10-10v-5.5c16.8-6.6 25-25.5 18.5-42.2-4.9-12.5-17-20.7-30.4-20.7zM171.163 258.9h-39c-5.5 0-10 4.5-10 10v157c0 5.5 4.5 10 10 10h39c5.5 0 10-4.5 10-10v-157c0-5.5-4.5-10-10-10zm-10 158h-19v-138h19v138zM250.163 235.9h-39c-5.5 0-10 4.5-10 10v181c0 5.5 4.5 10 10 10h39c5.5 0 10-4.5 10-10v-181c0-5.5-4.5-10-10-10zm-10 181h-19v-161h19v161zM92.163 344.9h-39c-5.5 0-10 4.5-10 10v71c0 5.5 4.5 10 10 10h39c5.5 0 10-4.5 10-10v-71c0-5.5-4.5-10-10-10zm-10 72h-19v-52h19v52zM414.663 0l-68.4.1c-5.5-.1-10 4.4-10.1 9.9s4.4 10 9.9 10.1h.2l44.3-.1-108.5 108.1-37.9-37.6c-1.9-1.8-4.5-2.7-7.1-2.6-2.6-.1-5.2.8-7.1 2.6l-192 192c-3.9 3.9-3.9 10.2 0 14 1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l185-185 37.9 38.2c1.8 2 4.4 3.1 7.1 3.2 2.7-.1 5.2-1.3 7.1-3.2l115.4-115.5-.1 44.5c0 5.6 4.4 10.1 10 10.3 5.6-.1 10-4.7 10-10.3l.1-68.6c0-5.5-4.5-10.1-10-10.1z"/></svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

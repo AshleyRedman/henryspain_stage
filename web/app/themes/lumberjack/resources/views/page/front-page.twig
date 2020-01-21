@@ -1,0 +1,32 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    <section class="hero" style="background-image: url({{ Image(page.thumbnail).src|resize(1440) }})">
+        <div class="container">
+            <h1 class="h1">
+                A FINANCIAL PLAN<br>
+                WITH THE RIGHT<br>
+                INVESTMENTS THAT<br>
+                SUIT YOUR LIFE GOALS<br>
+            </h1>
+            <a href="#intro" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <main id="intro" class="home-intro">
+        <div class="container">
+            <h2 class="h2">LOCAL ADVICE BASED ON GLOBAL RESEARCH</h2>
+            <h5 class="h5">Investments do not need to be complicated. We look to match your goals and objectives with the right investment mix for you,  making your money work smarter while you hopefully sleep well at night.</h5>
+            <h5 class="h5">If you are looking to make sense of your investments, and to understanding where your money is invested and why,  then we would be delighted to help you reach your financial goals.</h5>
+            <h5 class="h5"><a href="/testimonial">See what our customers think of us.</a></h5>
+            <video class="home-intro__video" controls poster="{{ theme.link }}/assets/img/video-poster.png">
+                <source src="{{ theme.link }}/assets/video/hs-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+
+    {% include 'partial/guide-slider.twig' %}
+
+{% endblock %}

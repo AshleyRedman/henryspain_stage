@@ -1,0 +1,17 @@
+.button {
+    @include font-size(15px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white;
+    padding: 0.5rem 1.75rem;
+    border: 2px solid $white;
+    border-radius: 50px;
+    margin: auto;
+    transition: all 300ms ease;
+
+    &:hover {
+        background-color: $white;
+        color: $hs-navy;
+        transition: all 300ms ease;
+    }
+}

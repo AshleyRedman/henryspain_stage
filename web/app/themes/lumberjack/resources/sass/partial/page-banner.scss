@@ -1,0 +1,43 @@
+.page-banner {
+    width: 100%;
+    //min-height: 300px;
+    background-image: url("/app/themes/lumberjack/assets/img/banner.png");
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 1rem 0 3rem 0;
+    padding: 1rem 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($hs-navy, 0.6);
+        z-index: 1;
+    }
+
+    .container {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-title {
+            padding: 3rem 0;
+            .h1 {
+                position: relative;
+                z-index: 2;
+                color: $hs-off-white;
+            }
+            .h6 {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                color: darken($hs-off-white, 15%);
+            }
+        }
+    }
+}

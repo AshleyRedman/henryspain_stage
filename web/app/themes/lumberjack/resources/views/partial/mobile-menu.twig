@@ -1,0 +1,21 @@
+{% if menu %}
+
+    <a href="#" class="burger">
+        <span class="burger__wrap">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </span>
+    </a>
+
+    <nav class="mobile-menu">
+        <ul>
+            {% for item in menu.items %}
+            <li>
+                <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+{% endif %}

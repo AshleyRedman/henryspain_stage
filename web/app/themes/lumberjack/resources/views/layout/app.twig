@@ -1,0 +1,19 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js no-svg" {{ site.language_attributes }}> <!--<![endif]-->
+{% include 'partial/head.twig' %}
+<body class="{{ body_class }}">
+
+    {% include 'partial/header.twig' %}
+    {% include 'partial/menu.twig' %}
+    {% include 'partial/mobile-menu.twig' %}
+
+    {% block content %}
+        <p class="text">Sorry, no content available.</p>
+    {% endblock %}
+
+    {% include 'partial/footer.twig' %}
+
+</body>
+</html>

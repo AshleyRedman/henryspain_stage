@@ -1,0 +1,26 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">{{ page.title }}</h1>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+
+    <div class="container">
+
+
+
+        <main class="entry-content">
+
+            {{ page.content|raw }}
+
+        </main>
+
+    </div>
+
+{% endblock %}

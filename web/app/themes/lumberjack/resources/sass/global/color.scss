@@ -1,0 +1,20 @@
+$white: #ffffff;
+$black: #000000;
+$facebook: #3b5998;
+$twitter: #00aced;
+$linkedin: #0077b5;
+
+$hs-navy: #0C2F60;
+$hs-gray: #4C4D4F;
+$hs-off-white:#F4F4F7;
+
+:root {
+    --white: #{$white};
+    --black: #{$black};
+    --facebook: #{$facebook};
+    --twitter: #{$twitter};
+    --linkedin: #{$linkedin};
+    --hs-navy: #{$hs-navy};
+    --hs-gray: #{$hs-gray};
+    --hs-off-white: #{$hs-off-white};
+}

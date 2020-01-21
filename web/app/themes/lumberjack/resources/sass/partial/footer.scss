@@ -1,0 +1,97 @@
+footer.footer {
+    background-color: $hs-navy;
+    color: $white;
+    padding: 1.5rem 0 0 0;
+}
+
+.footer__message,
+.footer__information {
+    display: grid;
+    grid-template-columns: auto 20%;
+    padding: 1.5rem 0;
+    grid-gap: 2rem;
+}
+
+.footer__message__content {
+    .h3, .text {
+        display: block;
+        color: $white;
+        padding: 0.25rem 0;
+    }
+}
+
+.footer__information {
+    p {
+        @include font-size(13px);
+        color: $white;
+        line-height: 1.5;
+    }
+    .policy-list {
+        justify-self: flex-end;
+
+        li {
+            text-align: right;
+            padding: 0.25rem 0;
+            &:first-child {
+                @include font-size(15px);
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: $white;
+                padding-bottom: 0.5rem;
+            }
+
+            a {
+                @include font-size(13px);
+                color: $white;
+
+                &:hover {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer__message__link {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.footer__socket {
+    background-color: $hs-gray;
+    padding: 1.5rem 0;
+}
+
+.socket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socket__item {
+    margin: 0 0.25rem;
+
+    a {
+        @include font-size(12px);
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+.copyright {
+    @include font-size(9px);
+    color: $white;
+    font-weight: normal;
+    line-height: 1.2;
+    display: block;
+    width: fit-content;
+    margin: 1.5rem auto 0 auto;
+}

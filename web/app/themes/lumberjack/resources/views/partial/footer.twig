@@ -1,0 +1,44 @@
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__message">
+            <div class="footer__message__content">
+                <h3 class="h3">We're here to help</h3>
+                <p class="text">If you would welcome a free second opinion on your investments feel free to get in touch.</p>
+            </div>
+            <div class="footer__message__link">
+                <a href="/contact" class="button">Contact us</a>
+            </div>
+        </div>
+
+        <div class="footer__information">
+            <p class="text">Henry Spain is authorised and regulated by the Financial Conduct Authority.
+                <br>Registered in England and Wales No. 7118506.
+                <br>Registered Office: 49a High Street, Market Harborough, Leicestershire, LE16 7AF</p>
+            <ul class="policy-list">
+                <li class="h5">Our Policies</li>
+                {% if policies %}
+                    {% for policy in policies %}
+                        <li><a href="{{ policy.link }}">{{ policy.title }}</a></li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer__socket">
+        <div class="container">
+            {% if menu %}
+                <ul class="socket">
+                    {% for item in menu.items %}
+                        <li class="socket__item">
+                            <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <small class="copyright">© Copyright {{ "now"|date("Y") }} {{ site.title }}</small>
+    </div>
+</footer>
+{{ function('wp_footer') }}

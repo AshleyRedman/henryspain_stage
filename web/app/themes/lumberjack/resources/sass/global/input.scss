@@ -1,0 +1,64 @@
+input,
+select,
+textarea {
+  border: 0;
+  padding: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  resize: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+
+  background: transparent;
+  padding: 1rem 0 !important;
+  border-bottom: 1px solid $hs-navy !important;
+  width: 100%;
+  font-family: $inter;
+
+  &::placeholder {
+    color: $hs-gray;
+  }
+
+  &:focus,
+  &::-moz-focus-inner {
+    outline: none;
+  }
+
+  &:invalid {
+  }
+
+  &:hover {
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="number"] {
+  -moz-appearance: textfield;
+
+  &:checked {
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+input[type="button"],
+input[type="submit"] {
+}
+
+input[type="file"] {
+}

@@ -1,0 +1,55 @@
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 9rem 0;
+    margin: 1.5rem 0 0 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba($black, 0.55) 20%, transparent 80%);
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($hs-navy, 0.45);
+    }
+
+    .h1 {
+        position: relative;
+        z-index: 3;
+        color: $hs-off-white;
+        letter-spacing: -0.05rem;
+        font-weight: 500;
+        line-height: 1.2;
+        padding: 0 0 3rem 0;
+
+    }
+
+    .button {
+        position: relative;
+        z-index: 3;
+        background-color: $hs-navy;
+        border-color: lighten($hs-navy, 50%);
+        color: lighten($hs-navy, 60%);
+
+        &:hover {
+            border-color: $hs-off-white;
+            color: $hs-off-white;
+        }
+    }
+}

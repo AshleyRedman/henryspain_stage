@@ -1,0 +1,41 @@
+.team {
+
+    .container {
+
+    }
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1.5rem 0;
+
+    @media only screen and (min-width: $wide-screen) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.team-member__image {
+    margin: auto auto 0 auto;
+    border-bottom: 1px solid $hs-navy;
+    max-width: 100%;
+}
+
+.team-member__content {
+    background-color: $hs-off-white;
+    padding: 3rem;
+
+    .h3 {
+        padding-bottom: 0.5rem;
+    }
+
+    .h5 {
+        padding-bottom: 1rem;
+    }
+
+    p {
+        color: $black;
+        line-height: 1.75;
+        padding-bottom: 0.5rem;
+    }
+}

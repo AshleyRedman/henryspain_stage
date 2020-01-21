@@ -1,0 +1,21 @@
+{% if menu %}
+
+    <nav class="menu">
+
+        <div class="container">
+
+            <div class="menu__wrap">
+                {% for item in menu.items %}
+
+                    <div class="menu__item {{ item.classes | join(' ') }}">
+                        <a target="{{ item.target }}" href="{{ item.link }}" class="menu__item__link">{{ item.title }}</a>
+                    </div>
+
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </nav>
+
+{% endif %}

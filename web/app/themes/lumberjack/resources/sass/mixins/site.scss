@@ -1,0 +1,31 @@
+@mixin site() {
+
+  /*
+  Place Site & Global Specific Styles here.
+  For example:
+  1. Global font
+  2. html background colors, body colors,
+  3. Default text color etc...
+   */
+
+  @include font-size(15px);
+  font-family: $inter;
+  overflow-y: hidden;
+  min-height: 100vh;
+
+  a {
+    color: $hs-navy;
+    text-decoration: none;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: $hs-gray;
+      transition: color 300ms ease;
+    }
+  }
+
+  ::selection {
+    color: $white;
+    background-color: $hs-navy;
+  }
+}

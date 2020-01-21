@@ -1,0 +1,17 @@
+@keyframes fade-in {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}

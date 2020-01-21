@@ -1,0 +1,30 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">Client Testimonials</h1>
+                <h6 class="h6">What our customers say about us</h6>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+    <main class="testimonials">
+        <div class="container">
+            {% if testimonials %}
+                {% for testimonial in testimonials %}
+                    <article class="testimonials__entry">
+                        <p class="text">{{ testimonial.testimonial_statement }}</p>
+                        <div class="testimonials__entry__title">
+                            <h6 class="h6">{{ testimonial.testimonial_name }}</h6>
+                            <h6 class="h6">{{ testimonial.testimonial_position }}</h6>
+                        </div>
+                    </article>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </main>
+
+{% endblock %}

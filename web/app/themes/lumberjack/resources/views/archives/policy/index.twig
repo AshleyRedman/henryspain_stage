@@ -1,0 +1,27 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    <div class="container">
+
+        <aside class="page-title">
+            <h1 class="h1">All Policies</h1>
+        </aside>
+
+        <main class="entry-content">
+
+            {% if policies %}
+
+                {% for policy in policies %}
+
+                    <a href="{{ policy.link }}">{{ policy.title }}</a>
+
+                {% endfor %}
+
+            {% endif %}
+
+        </main>
+
+    </div>
+
+{% endblock %}

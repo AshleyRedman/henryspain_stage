@@ -1,0 +1,49 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">Services</h1>
+                <h6 class="h6">How we can help you</h6>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+    <section class="services-info">
+        <div class="container">
+            <h5 class="h5">Offering exemplary service for all customers is core to our service proposition and includes:</h5>
+            <ul class="services-info__list">
+                <li>Independent local financial advice</li>
+                <li>A clear and transparent charging structure</li>
+                <li>Regular face to face reviews</li>
+                <li>Simplification of investment administration</li>
+                <li>Free initial consultations</li>
+                <li>Home or office visits</li>
+                <li>Online access to track your investments</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="services-list">
+        <div class="container">
+            {% if services is not empty %}
+                {% for service in services %}
+                    <article class="service-list__item">
+                        <img src="{{ Image(service.thumbnail).src|resize(50,50) }}" alt="{{ Image(service.thumbnail).alt }}" width="70px" height="70px" class="service-list__item__icon" loading="lazy">
+                        <h3 class="h3">{{ service.title }}</h3>
+                        <div class="service-content">
+                            {{ service.content }}
+                        </div>
+                    </article>
+                {% endfor %}
+            {% else %}
+
+            {% endif %}
+        </div>
+    </section>
+
+
+
+{% endblock %}

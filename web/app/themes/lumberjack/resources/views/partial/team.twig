@@ -1,0 +1,20 @@
+{% if team is not empty %}
+    <section class="team">
+        <div class="container">
+
+            {% for member in team %}
+                <article class="team-member">
+                    <img class="team-member__image" src="{{ Image(member.thumbnail).src|resize(500, 700) }}" alt="{{ Image(member.thumbnail).alt }}" loading="lazy">
+                    <div class="team-member__content">
+                        <h3 class="h3">{{ member.title }}</h3>
+                        <h5 class="h5">{{ member.team_position }}</h5>
+                        {{ member.content }}
+                    </div>
+                </article>
+            {% endfor %}
+
+        </div>
+    </section>
+{% else %}
+
+{% endif %}
