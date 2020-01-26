@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
         add_filter('acf/settings/show_admin', '__return_false');
 
         add_filter('timber/context', function ($context) {
-            $context['policies'] = Policy::getPublishedPolicies();
+            $context['policies'] = Policy::getPublished();
             return $context;
         });
     }

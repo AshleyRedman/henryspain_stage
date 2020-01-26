@@ -67,7 +67,7 @@ class Policy extends Post
         ];
     }
 
-    public static function getPublishedPolicies()
+    public static function getPublished()
     {
         return $policies = collect(
             Policy::builder()
