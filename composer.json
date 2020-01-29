@@ -53,7 +53,8 @@
     "wpackagist-plugin/codepress-admin-columns": "^3.4",
     "wpackagist-plugin/under-construction-page": "^3.65",
     "dalestudiosltdplugins/ds-wordpress-defaults": "^6.0",
-    "wpackagist-plugin/wp-mail-logging": "^1.9"
+    "wpackagist-plugin/wp-mail-logging": "^1.9",
+    "wpackagist-plugin/wpforms-lite": "1.5.8.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
