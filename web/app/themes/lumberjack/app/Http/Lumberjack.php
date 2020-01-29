@@ -18,6 +18,7 @@ class Lumberjack extends LumberjackCore
         // the context, you can get items from it in a way that is a little smoother and more
         // versatile than Wordpress's wp_nav_menu. (You need never again rely on a
         // crazy "Walker Function!")
+        $context['ajax_url'] = admin_url('admin-ajax.php');
         $context['menu'] = new Menu('main-nav');
 
         return $context;

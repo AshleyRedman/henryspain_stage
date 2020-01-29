@@ -14,6 +14,7 @@ class SingleGuideController extends Controller
         $context = Timber::get_context();
         $guide = new Guide();
         $context['guide'] = Guide::getCurrentGuide($guide);
+        $context['guide_file'] = Guide::getGuideUrl($guide);
         return new TimberResponse('archives/guide/show.twig', $context);
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f9346a3e4cb8812d191bf73265c12d7",
+    "content-hash": "0a4cedb22441cd1eb0edc40005f3fbe1",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -325,6 +325,41 @@
             "homepage": "https://github.com/container-interop/container-interop",
             "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "dalestudiosltdplugins/ds-wordpress-defaults",
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DaleStudiosLtdPlugins/ds-wordpress-defaults.git",
+                "reference": "fec8c1f03e66a877ffac65c5f1cd984312246995"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DaleStudiosLtdPlugins/ds-wordpress-defaults/zipball/fec8c1f03e66a877ffac65c5f1cd984312246995",
+                "reference": "fec8c1f03e66a877ffac65c5f1cd984312246995",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Ashley Redman",
+                    "homepage": "https://dalestudios.co.uk"
+                }
+            ],
+            "homepage": "https://dalestudios.co.uk",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/DaleStudiosLtdPlugins/ds-wordpress-defaults/tree/6.0.0",
+                "issues": "https://github.com/DaleStudiosLtdPlugins/ds-wordpress-defaults/issues"
+            },
+            "time": "2020-01-23T12:35:57+00:00"
         },
         {
             "name": "danielstjules/stringy",
@@ -2547,6 +2582,24 @@
             "homepage": "https://wordpress.org/plugins/wordfence/"
         },
         {
+            "name": "wpackagist-plugin/wp-mail-logging",
+            "version": "1.9.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-logging/",
+                "reference": "tags/1.9.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-logging.1.9.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-logging/"
+        },
+        {
             "name": "wpackagist-plugin/wp-optimize",
             "version": "3.0.15",
             "source": {
@@ -2653,12 +2706,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0be9764a52f59d0882ab51d5b68b03bfb8dd8a5f"
+                "reference": "666ba252853924887ac57dc9f66e6b6af78d5a76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0be9764a52f59d0882ab51d5b68b03bfb8dd8a5f",
-                "reference": "0be9764a52f59d0882ab51d5b68b03bfb8dd8a5f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/666ba252853924887ac57dc9f66e6b6af78d5a76",
+                "reference": "666ba252853924887ac57dc9f66e6b6af78d5a76",
                 "shasum": ""
             },
             "conflict": {
@@ -2776,7 +2829,7 @@
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/grid-bundle": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
-                "sylius/resource-bundle": ">=1,<1.3.13|>=1.4,<1.4.6|>=1.5,<1.5|>=1.6,<1.6.3",
+                "sylius/resource-bundle": ">=1,<1.3.13|>=1.4,<1.4.6|>=1.5,<1.5.1|>=1.6,<1.6.3",
                 "sylius/sylius": ">=1,<1.3.12|>=1.4,<1.4.4",
                 "symfony/cache": ">=3.1,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8",
                 "symfony/dependency-injection": ">=2,<2.0.17|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
@@ -2871,7 +2924,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2020-01-27T13:37:59+00:00"
+            "time": "2020-01-28T17:25:41+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",

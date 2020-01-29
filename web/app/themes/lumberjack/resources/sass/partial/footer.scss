@@ -7,9 +7,13 @@ footer.footer {
 .footer__message,
 .footer__information {
     display: grid;
-    grid-template-columns: auto 20%;
+    grid-template-columns: repeat(1, 1fr);
     padding: 1.5rem 0;
     grid-gap: 2rem;
+
+    @media only screen and (min-width: $desktop) {
+        grid-template-columns: auto 20%;
+    }
 }
 
 .footer__message__content {
@@ -27,10 +31,17 @@ footer.footer {
         line-height: 1.5;
     }
     .policy-list {
-        justify-self: flex-end;
+        justify-self: center;
+
+        @media only screen and (min-width: $desktop) {
+            justify-self: flex-end;
+            li {
+                text-align: right;
+            }
+        }
 
         li {
-            text-align: right;
+            text-align: center;
             padding: 0.25rem 0;
             &:first-child {
                 @include font-size(15px);
@@ -69,10 +80,19 @@ footer.footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @media only screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
 }
 
 .socket__item {
-    margin: 0 0.25rem;
+    margin: 0.5rem 0;
+
+    @media only screen and (min-width: $desktop) {
+        margin: 0 0.25rem;
+    }
 
     a {
         @include font-size(12px);

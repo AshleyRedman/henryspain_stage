@@ -9,6 +9,7 @@ class AssetsController extends BaseController
     public function __construct()
     {
         add_action('wp_enqueue_scripts', [$this, 'jquery']);
+        add_action('wp_enqueue_scripts', [$this, 'jqueryForm']);
         add_action('wp_enqueue_scripts', [$this, 'css']);
         add_action('wp_footer', [$this, 'js']);
         add_action('wp_enqueue_scripts', [$this, 'slick']);
@@ -17,6 +18,11 @@ class AssetsController extends BaseController
     public function jquery()
     {
         wp_enqueue_script('jquery');
+    }
+
+    public function jqueryForm()
+    {
+        wp_enqueue_script('jquery-form');
     }
 
     public function css()

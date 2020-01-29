@@ -81,4 +81,9 @@ class Guide extends Post
     {
         return $guide;
     }
+
+    public static function getGuideUrl($guide)
+    {
+        return $url = wp_get_attachment_url($guide->guide_file);
+    }
 }
