@@ -60,7 +60,9 @@
         &:focus {
             outline: none;
         }
-        -webkit-appearance: checkbox;
+        &[type="checkbox"] {
+            -webkit-appearance: checkbox;
+        }
     }
 }
 
