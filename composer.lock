@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a4cedb22441cd1eb0edc40005f3fbe1",
+    "content-hash": "780e6bfda288c05856885d9cfb1e09c9",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -2616,24 +2616,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-optimize/"
-        },
-        {
-            "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.5.8.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.5.8.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.5.8.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wpforms-lite/"
         },
         {
             "name": "zendframework/zend-diactoros",
