@@ -11,5 +11,6 @@ return [
         App\PostTypes\Testimonial::class,
         App\PostTypes\Guide::class,
         App\PostTypes\Team::class,
+        App\PostTypes\Campaign::class,
     ],
 ];

@@ -54,7 +54,8 @@
     "wpackagist-plugin/under-construction-page": "^3.65",
     "dalestudiosltdplugins/ds-wordpress-defaults": "^6.0",
     "wpackagist-plugin/wp-mail-logging": "^1.9",
-    "wpackagist-plugin/wpforms-lite": "1.5.8.2"
+    "wpackagist-plugin/wpforms-lite": "1.5.8.2",
+    "wpackagist-plugin/wp-google-maps": "^8.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",

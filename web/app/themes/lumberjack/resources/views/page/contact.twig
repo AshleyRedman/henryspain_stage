@@ -1,0 +1,48 @@
+
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">{{ page.title }}</h1>
+                <h6 class="h6">Get in touch</h6>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+    <main class="contact">
+        <div class="container">
+            <section class="contact-general">
+                <h4 class="h4">General Enquieres</h4>
+                <h5 class="h5">Email: <a href="mailto:info@henryspain.co.uk">info@henryspain.co.uk</a></h5>
+            </section>
+            <section class="maps">
+                <article>
+                    <h5 class="h5">Market Harborough Office:</h5>
+                    <address>
+                        49a High Street,<br>
+                        Market Harborough,<br>
+                        Leicestershire,<br>
+                        LE16 7AF
+                    </address>
+                    <span>Tel: <a href="tel:01858 898 023">+44 (0) 1858 898 023</a></span>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.957984082288!2d-0.924979084002078!3d52.479896446952736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877710389b705b1%3A0xbaccd87526f6ceb8!2sHenry%20Spain%20Investment%20Services!5e0!3m2!1sen!2suk!4v1580512154585!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;"></iframe>
+                </article>
+                <article>
+                    <h5 class="h5">Oakham Office:</h5>
+                    <address>
+                        3 Church Passage,<br>
+                        Oakham,<br>
+                        Rutland,<br>
+                        LE15 6DR
+                    </address>
+                    <span>Tel: <a href="tel:01572 897 510">+44 (0) 1572 897 510</a></span>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d855.3898259136756!2d-0.7283837927197516!3d52.670673615074286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487780f0484c77ef%3A0x7f90e17308d55962!2sHenry%20Spain%20Investment%20Services!5e0!3m2!1sen!2suk!4v1580512408007!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;"></iframe>
+                </article>
+            </section>
+        </div>
+    </main>
+
+{% endblock %}
