@@ -5,7 +5,6 @@ namespace App;
 use App\Http\Controllers\Controller;
 use App\PostTypes\Policy;
 use Rareloop\Lumberjack\Http\Responses\TimberResponse;
-use Rareloop\Lumberjack\Post;
 use Timber\Timber;
 
 class SinglePolicyController extends Controller
@@ -14,11 +13,7 @@ class SinglePolicyController extends Controller
     {
         $context = Timber::get_context();
         $post = new Policy();
-
-        $context['post'] = $post;
-        $context['title'] = $post->title;
-        $context['content'] = $post->content;
-
+        $context['page'] = $post;
         return new TimberResponse('page/default.twig', $context);
     }
 }
