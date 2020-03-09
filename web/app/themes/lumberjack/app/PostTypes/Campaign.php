@@ -17,10 +17,10 @@ class Campaign extends Post
             'labels' => [
                 'name' => __('Campaigns'),
                 'singular_name' => __('Campaign'),
-                'add_new' => __('Create Campaign'),
-                'add_new_item' => __('Add New Campaign'),
-                'edit_item' => __('Edit Campaign'),
-                'new_item' => __('New Campaign'),
+                'add_new' => __('Create Campaign Landing Page'),
+                'add_new_item' => __('Add New Campaign Page'),
+                'edit_item' => __('Edit Campaign Page'),
+                'new_item' => __('New Campaign Page'),
                 'view_item' => __('View Campaign'),
                 'view_items' => __('View Campaigns'),
                 'search_items' => __('Search all Campaigns'),
@@ -49,7 +49,7 @@ class Campaign extends Post
             'hierarchical' => false,
             'supports' => array(
                 'title',
-                //'editor',
+                'editor',
                 //'author',
                 'thumbnail',
                 //'excerpt',
@@ -65,5 +65,14 @@ class Campaign extends Post
             'exclude_from_search' => true,
             'slug' => __('Campaigns')
         ];
+    }
+
+    public static function getAllPublished()
+    {
+        return Campaign::builder()
+            ->whereStatus('publish')
+            ->orderBy('ASC', 'date')
+            ->limit(15)
+            ->get();
     }
 }

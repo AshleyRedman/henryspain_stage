@@ -3,9 +3,8 @@
 namespace App;
 
 use App\Http\Controllers\Controller;
-use Rareloop\Lumberjack\Http\Responses\TimberResponse;
 use Rareloop\Lumberjack\Page;
-use App\Http\Controllers\PageController as PageHandle;
+use Rareloop\Lumberjack\Http\Responses\TimberResponse;
 use Timber\Timber;
 
 class PageController extends Controller
@@ -14,7 +13,20 @@ class PageController extends Controller
     {
         $context = Timber::get_context();
         $page = new Page();
-        $context['page'] = PageHandle::getPage($page, $context);
+
+        if ($this->checkStatus($page, $context) == true) {
+            $context['page'] = $page;
+        }
+
         return new TimberResponse('page/default.twig', $context);
+    }
+
+    public function checkStatus($page, $context)
+    {
+        if ($page->post_status == 'publish') {
+            return true;
+        } else {
+            return new TimberResponse('errors/404.twig', $context);
+        }
     }
 }

@@ -1,0 +1,30 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% embed 'partial/page-banner.twig' %}
+        {% block banner_attr %} style="background-image:url({{ Image(campaign.thumbnail).src|resize(1000,300) }});"{% endblock %}
+        {% block banner_content %}
+            <aside class="page-title">
+                <h1 class="h1">{{ title }}</h1>
+                <h6 class="h6">{{ guide_description }}</h6>
+            </aside>
+        {% endblock %}
+    {% endembed %}
+
+    <div class="container">
+        <section>
+            {% if all_active_campaigns is not empty %}
+                <aside class="sidebar">
+                    {% for item in all_active_campaigns %}
+                        <a href="{{ item.link }}">{{ item.title }}</a>
+                    {% endfor %}
+                </aside>
+            {% endif %}
+            <main>
+                {{ content }}
+            </main>
+        </section>
+    </div>
+
+{% endblock %}
