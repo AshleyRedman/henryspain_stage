@@ -36,19 +36,10 @@
         font-weight: 500;
         line-height: 1.2;
         padding: 0 0 3rem 0;
-
     }
 
     .button {
         position: relative;
-        z-index: 3;
-        background-color: $hs-navy;
-        border-color: lighten($hs-navy, 50%);
-        color: lighten($hs-navy, 60%);
-
-        &:hover {
-            border-color: $hs-off-white;
-            color: $hs-off-white;
-        }
+        z-index: 2;
     }
 }

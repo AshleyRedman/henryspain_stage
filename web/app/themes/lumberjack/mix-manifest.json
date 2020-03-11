@@ -1,13 +1,24 @@
 {
     "/assets/js/app.js": "/assets/js/app.js",
     "/assets/css/app.css": "/assets/css/app.css",
+    "/assets/img/banner.png": "/assets/img/banner.png",
     "/assets/img/logo.png": "/assets/img/logo.png",
     "/assets/img/mail.svg": "/assets/img/mail.svg",
     "/assets/img/404.svg": "/assets/img/404.svg",
+    "/assets/img/pin.svg": "/assets/img/pin.svg",
     "/assets/img/video-poster.png": "/assets/img/video-poster.png",
     "/assets/img/phone.svg": "/assets/img/phone.svg",
-    "/assets/img/banner.png": "/assets/img/banner.png",
     "/assets/img/house.jpg": "/assets/img/house.jpg",
-    "/assets/img/pin.svg": "/assets/img/pin.svg",
-    "/assets/img/whoops.svg": "/assets/img/whoops.svg"
+    "/assets/img/whoops.svg": "/assets/img/whoops.svg",
+    "/assets/img/coin.png": "/assets/img/coin.png",
+    "/assets/img/404.svg.bak": "/assets/img/404.svg.bak",
+    "/assets/img/banner.png.bak": "/assets/img/banner.png.bak",
+    "/assets/img/coin.png.bak": "/assets/img/coin.png.bak",
+    "/assets/img/house.jpg.bak": "/assets/img/house.jpg.bak",
+    "/assets/img/logo.png.bak": "/assets/img/logo.png.bak",
+    "/assets/img/mail.svg.bak": "/assets/img/mail.svg.bak",
+    "/assets/img/phone.svg.bak": "/assets/img/phone.svg.bak",
+    "/assets/img/pin.svg.bak": "/assets/img/pin.svg.bak",
+    "/assets/img/video-poster.png.bak": "/assets/img/video-poster.png.bak",
+    "/assets/img/whoops.svg.bak": "/assets/img/whoops.svg.bak"
 }

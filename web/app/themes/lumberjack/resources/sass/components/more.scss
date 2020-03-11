@@ -1,0 +1,47 @@
+.more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    z-index: 2;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+
+    @media only screen and (max-width: 1860px) {
+        flex-direction: column;
+
+        &__right {
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+
+    &__left {
+        padding-right: 1.5rem;
+    }
+
+    &__right {
+
+    }
+
+    h4 {
+        @include font-size(21px);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 0 0.75rem 0;
+        color: $hs-navy;
+    }
+
+    p {
+        @include font-size(16px);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $hs-navy;
+    }
+}

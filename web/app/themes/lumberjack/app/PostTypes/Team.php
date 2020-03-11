@@ -72,7 +72,6 @@ class Team extends Post
         return $teams = collect(
             Team::builder()
                 ->whereStatus('publish')
-                ->orderBy('date', 'ASC')
                 ->get()
         );
     }

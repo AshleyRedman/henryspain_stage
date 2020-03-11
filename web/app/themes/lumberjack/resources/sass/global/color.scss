@@ -7,6 +7,12 @@ $linkedin: #0077b5;
 $hs-navy: #0C2F60;
 $hs-gray: #4C4D4F;
 $hs-off-white:#F4F4F7;
+$hs-light-blue: #5B98C5;
+
+$hs-purple: #581F4A;
+$hs-yellow: #A48449;
+$hs-green: #71A191;
+$hs-light: #E7E7E9;
 
 :root {
     --white: #{$white};
@@ -17,4 +23,9 @@ $hs-off-white:#F4F4F7;
     --hs-navy: #{$hs-navy};
     --hs-gray: #{$hs-gray};
     --hs-off-white: #{$hs-off-white};
+    --hs-purple: #{$hs-purple};
+    --hs-yellow: #{$hs-yellow};
+    --hs-green: #{$hs-green};
+    --hs-light: #{$hs-light};
+    --hs-light-blue: #{$hs-light-blue};
 }
